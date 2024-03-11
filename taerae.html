@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerobaseone Individual Photocard List</title>
+    <link rel="stylesheet" href="style.css"/> 
+<script>
+        function toggleOpacity(element) {
+            var image = element.querySelector('.img');
+            if (image.style.opacity === '0.3') {
+                image.style.opacity = '1';
+            } else {
+                image.style.opacity = '0.3';
+            }
+        }
+    </script>
+    <!-- couldn't get toggle opacity to work so had chatgpt help me figure out how to do it-->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateToPage('Index.html')">About</a></li>
+            <li>
+                <a href="#">Templates ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#" onclick="navigateToPage('Zhanghao.html')">Zhanghao</a></li>
+                    <li><a href="#" onclick="navigateToPage('Hanbin.html')">Sung Hanbin</a></li>
+                    <li><a href="#" onclick="navigateToPage('Matthew.html')">Seok Matthew</a></li>
+                    <li><a href="#" onclick="navigateToPage('Ricky.html')">Ricky</a></li>
+                    <li><a href="#" onclick="navigateToPage('Gunwook.html')">Park Gunwook</a></li>
+                    <li><a href="#" onclick="navigateToPage('Taerae.html')">Kim Taerae</a></li>
+                    <li><a href="#" onclick="navigateToPage('Gyuvin.html')">Kim Gyuvin</a></li>
+                    <li><a href="#" onclick="navigateToPage('Jiwoong.html')">Kim Jiwoong</a></li>
+                    <li><a href="#" onclick="navigateToPage('Yujin.html')">Han Yujin</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="navigateToPage('albums.html')">Albums</a></li>
+            <li><a href="#">Non-Albums</a></li>
+        </ul>
+    </nav>
+
+   <div class="image-container-ALBUM">
+        <div class="text-overlay-ALBUM">
+            <h1>TAERAE
+            ALBUM PHOTOCARDS</h1>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="parent-cards">
+    <h1>Youth <em>In The</em> Shade</h1>
+
+    <!-- To do this i made the boxes using a -->
+         <!-- Youth In The Shade-->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/tyoutha.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Youth Version A</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/tyouthb.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Youth Version B</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/tshadea.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Shade Version A</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/tshadeb.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Shade Version B</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/tydigi..jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Digipack Version </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="parent-cards">
+    <h1>Melting Point</h1>
+    <!-- Melting Point-->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tfairytalea.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Fairytale Version A</h6>
+            </div>
+        </div>        
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tfairytaleb.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Fairytale Version B</h6>
+            </div>
+        </div>        
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tloyaltya.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Loyalty Version A</h6>
+            </div>
+        </div>        
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tloyaltyb.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Loyalty Version B</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tmysterya.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Mystery Version A</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tmysteryb.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Mystery Version B</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tmpdigia.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Digipack Version A</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/tmpdigib.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Digipack Version B</h6>
+            </div>
+        </div>   
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="image-container-ALBUM">
+        <div class="text-overlay-ALBUM">
+            <h1>NON-ALBUM PHOTOCARDS</h1>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<div class="parent-cards">
+<h1>Merchandise</h1>
+<!-- Merchandise -->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="candle/tcandle.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Candle</h6>
+            </div>
+        </div> 
+
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="necklace/tnecklace.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Necklace</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="cgv_bookmark/tbookmark.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">CGV Bookmark</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="50k_wonMD_Benifit/t50kb.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">50k won Benifit</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="Pop-Upweek1/tweek1pu.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Week 1 benifit</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="Pop-Upweek2/tweek2pu.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Week 2 benifit</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="passport/tpassport.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Passport</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="l_holder/tlholderw.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">White I Holder</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="l_holder/tlholderb.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Blue I Holder</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="luggage_tag/tluggaget.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Luggage Tag</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="lightstick/tlightstick.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Lightstick</h6>
+            </div>
+        </div>
+    </div>
+<h1>Trading Cards</h1>
+<!-- Trading Cards -->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/tphone.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Phone Version</h6>
+            </div>
+        </div>
+    <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/t cherry.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Cherry Version</h6>
+            </div>
+        </div>
+    <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/tcamera.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Camera Version</h6>
+            </div>
+        </div>
+<div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/theart.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Heart Version</h6>
+            </div>
+        </div>
+<div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/tpolaroid.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Polaroid Version</h6>
+            </div>
+        </div>
+<div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/tlenticular.jpg" alt="Trading Cards" width="105px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Lenticular Version</h6>
+            </div>
+        </div> 
+    </div>
+<h1>Seasons Greetings</h1>
+ <!-- Seasons Greetings -->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="seasons_greetings/tstand.jpg" alt="seasons_greetings" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Photostand</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="seasons_greetings/tpostcard.jpg" alt="seasons_greetings" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Postcard</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="seasons_greetings/tsgpc.jpg" alt="seasons_greetings" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Photocard Set</h6>
+            </div>
+        </div>
+    </div>
+<h1>Others</h1>
+<!-- Other -->
+<div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="boysplanet/ttop9.jpg" alt="Other" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Boys Planet</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="kcon/tkcon.jpg" alt="Other" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Kcon</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="kit_fanclub/tkit.jpg" alt="Other" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Fanclub Kit</h6>
+            </div>
+        </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+    function navigateToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>
+
