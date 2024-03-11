@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerobaseone Individual Photocard List</title>
+    <link rel="stylesheet" href="style.css"/> 
+<script>
+        function toggleOpacity(element) {
+            var image = element.querySelector('.img');
+            if (image.style.opacity === '0.3') {
+                image.style.opacity = '1';
+            } else {
+                image.style.opacity = '0.3';
+            }
+        }
+    </script>
+    <!-- couldn't get toggle opacity to work so had chatgpt help me figure out how to do it-->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateToPage('Index.html')">About</a></li>
+            <li>
+                <a href="#">Templates ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#" onclick="navigateToPage('Zhanghao.html')">Zhanghao</a></li>
+                    <li><a href="#" onclick="navigateToPage('Hanbin.html')">Sung Hanbin</a></li>
+                    <li><a href="#" onclick="navigateToPage('Matthew.html')">Seok Matthew</a></li>
+                    <li><a href="#" onclick="navigateToPage('Ricky.html')">Ricky</a></li>
+                    <li><a href="#" onclick="navigateToPage('Gunwook.html')">Park Gunwook</a></li>
+                    <li><a href="#" onclick="navigateToPage('Taerae.html')">Kim Taerae</a></li>
+                    <li><a href="#" onclick="navigateToPage('Gyuvin.html')">Kim Gyuvin</a></li>
+                    <li><a href="#" onclick="navigateToPage('Jiwoong.html')">Kim Jiwoong</a></li>
+                    <li><a href="#" onclick="navigateToPage('Yujin.html')">Han Yujin</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="navigateToPage('albums.html')">Albums</a></li>
+            <li><a href="#">Non-Albums</a></li>
+        </ul>
+    </nav>
+
+   <div class="image-container-ALBUM">
+        <div class="text-overlay-ALBUM">
+            <h1>ZHANG HAO<br>
+            ALBUM PHOTOCARDS</h1>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="parent-cards">
+    <h1>Youth In The Shade</h1>
+
+    <!-- To do this i made the boxes using a -->
+         <!-- Youth In The Shade-->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/haoyoutha.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Youth Version A</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/haoyouthb.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Youth Version B</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/haoshadea.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Shade Version A</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/haoshadeb.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Shade Version B</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="yits/haoydigi.jpg" alt="Youth In The Shade" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Digipack Version </h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="parent-cards">
+    <h1>Melting Point</h1>
+    <!-- Melting Point-->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haofairytalea.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Fairytale Version A</h6>
+            </div>
+        </div>        
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haofairytaleb.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Fairytale Version B</h6>
+            </div>
+        </div>        
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haoloyaltya.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Loyalty Version A</h6>
+            </div>
+        </div>        
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haoloyaltyb.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Loyalty Version B</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haomysterya.jpeg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Mystery Version A</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haomysteryb.jpeg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Mystery Version B</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haompdigia.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Digipack Version A</h6>
+            </div>
+        </div>   
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="meltingpoint/haompdigib.jpg" alt="Melting Point" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title"> Digipack Version B</h6>
+            </div>
+        </div>   
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="image-container-ALBUM">
+        <div class="text-overlay-ALBUM">
+            <h1>ZHANG HAO<br>
+            NON-ALBUM PHOTOCARDS</h1>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Merchandise</h1>
+<!-- Merchandise -->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="candle/haocandle.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Candle</h6>
+            </div>
+        </div> 
+
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="necklace/haonecklace.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Necklace</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="cgv_bookmark/haobookmark.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">CGV Bookmark</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="50k_wonMD_Benifit/hao50kb.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">50k won Benifit</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="Pop-Upweek1/haoweek1pu.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Week 1 benifit</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="Pop-Upweek2/haoweek2pu.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Week 2 benifit</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="passport/haopassport.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Passport</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="l_holder/haolholderw.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">White I Holder</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="l_holder/haolholderb.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Blue I Holder</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="luggage_tag/haoluggaget.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Luggage Tag</h6>
+            </div>
+        </div> 
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="lightstick/haolightstick.jpg" alt="Merchandise" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Lightstick</h6>
+            </div>
+        </div>
+    </div>
+<h1>Trading Cards</h1>
+<!-- Trading Cards -->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/haophone.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Phone Version</h6>
+            </div>
+        </div>
+    <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/hao cherry.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Cherry Version</h6>
+            </div>
+        </div>
+    <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/hao camera.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Camera Version</h6>
+            </div>
+        </div>
+<div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/haoheart.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Heart Version</h6>
+            </div>
+        </div>
+<div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/haopolaroid.jpg" alt="Trading Cards" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Polaroid Version</h6>
+            </div>
+        </div>
+<div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="tc/haolenticular.jpg" alt="Trading Cards" width="105px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Lenticular Version</h6>
+            </div>
+        </div> 
+    </div>
+<h1>Seasons Greetings</h1>
+ <!-- Seasons Greetings -->
+    <div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="seasons_greetings/haostand.jpg" alt="seasons_greetings" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Photostand</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="seasons_greetings/haopostcard.jpg" alt="seasons_greetings" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Postcard</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="seasons_greetings/haosg.jpg" alt="seasons_greetings" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Photocard Set</h6>
+            </div>
+        </div>
+    </div>
+<h1>Others</h1>
+<!-- Other -->
+<div class="filterable_cards">
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="boysplanet/haotop9.jpg" alt="Other" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Boys Planet</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="kcon/haokcon.jpg" alt="Other" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Kcon</h6>
+            </div>
+        </div>
+        <div class="card" onclick="toggleOpacity(this)">
+            <input type="checkbox" class="card_checkbox">
+            <img class="img" src="kit_fanclub/haokit.jpg" alt="Other" width="110px" height="165px">
+            <div class="card_body">
+                <h6 class="card_title">Fanclub Kit</h6>
+            </div>
+        </div>
+</div>
+<script>
+    function navigateToPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
