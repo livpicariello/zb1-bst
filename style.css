@@ -1,4 +1,3 @@
-
 body {
         background-image: url('stars.jpg');
         background-size: cover;
@@ -14,7 +13,6 @@ p {
         font-size: 13px;
         margin-top: 10px;
         color: white;
-        justify-content: center;
 }
 
 h1 {
@@ -295,7 +293,6 @@ p-2{
 
 .container-nonalbum {
   display: inline-block;
-  margin-right: 20px;
 }
 
 .image-container {
@@ -502,7 +499,7 @@ li {
 
 .parent-cards{
     margin:auto;
-    width:40vw;
+    width:30vw;
     justify-content: center;
 }
 
@@ -518,6 +515,7 @@ li {
     padding: 3px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-right: 10px;
     margin-bottom: 10px;
     transition: opacity 0.3s ease; 
 }
@@ -555,9 +553,6 @@ li {
     font-size: 20px;
     color: black;
 }
-
-
-
 
 
 
