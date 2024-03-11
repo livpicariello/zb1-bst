@@ -501,12 +501,14 @@ li {
 
 .parent-cards{
     margin:auto;
-    width:80vw;
+    width:50vw;
+    justify-content: center;
 }
 
 .filterable_cards {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-top: 25px;
 }
 
