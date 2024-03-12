@@ -110,14 +110,6 @@ h1 {
     width:auto;
     margin:0;
 }
-
-.container-bst {
-    display: flex;
-    align-items: center;
-    margin-left: 130px;
-    margin-right: 80px;
-}
-
 .text-content-bst {
     flex: 1;
     padding-left: 20px;
@@ -129,33 +121,41 @@ h1 {
 }
 
 /* put the image(left) beside the paragraph*/
-.container-bst2 {
+.container-bst {
     display: flex;
-    margin-left: 130px;
-    margin-right: 80px;
+    justify-content: center;
+    text-align: top;
+    margin-left: 160px;
+    gap: 20px;
 }
 
-.scroll-container-bst2 {
+.text-content-bst {
     flex: 1;
-    overflow-x: auto;
-    white-space: nowrap;
+    padding: 0 10px; /* Adjust padding as needed */
 }
 
-.text-content{
+.image-container {
     flex: 1;
-    padding-left: 20px;
-    max-width:500px;
+    text-align: center;
 }
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* about the group images, used w3 shools to code this*/
-div.scroll-container {
+div.scroll-container-bst2 {
   background-color: transparent;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
+  margin-left: 380px;
+  width: 1165px;
 }
 
-div.scroll-container img {
+div.scroll-container-bst2 img {
   padding: 10px;
   color: whitesmoke;
 }
@@ -229,6 +229,9 @@ p-2{
     justify-content: center;
     color: black;
 }
+p3{
+    margin-left:380px ;
+}
 
 /* RANKS */
 
@@ -270,6 +273,8 @@ p-2{
 .rank-container {
     display: flex;
     flex-wrap: nowrap; 
+    width: 25%vw;
+    height: auto;
 }
 
 .list {
@@ -491,9 +496,6 @@ li {
 .text-overlay-ALBUM h9 {
     font-size: 36px;
 }
-h9{
-    font-size: 55555px;
-}
 
 /* pc tracker*/
 
@@ -565,5 +567,8 @@ h9{
     color: black;
 }
 
+h6{
+    text-align: center;
+}
 
 
