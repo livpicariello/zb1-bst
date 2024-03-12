@@ -300,23 +300,30 @@ p3{
 }
 
 /* ALBUM PAGE */
+container-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-gap: 20px; /* Gap between grid items */
+        }
 
-.container-nonalbum {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: center; /* Centers items horizontally */
-    gap: 20px; /* Adds space between containers */
-}
+        .container-nonalbum {
+            width: 100%; /* Full width for container */
+        }
 
-.image-container {
-    text-align: center; /* Centers the content horizontally */
-    width: calc(80% - 20px); /* Sets the width of each container to half of the parent container width minus the gap */
-    margin-bottom: 20px; /* Adds space between containers vertically */
-}
+        .image-container {
+            text-align: center; /* Center align content */
+        }
 
-.image-container img {
-    max-width: 100%; /* Ensures images don't exceed their container width */
-}
+        .image-container img {
+            width: 100%; /* Make images fill container width */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 450px; /* Set maximum width for images */
+            max-height: 450px; /* Set maximum height for images */
+        }
+
+        h2 {
+            margin-top: 10px; /* Add space below image */
+        }
 
 .image-container-non {
     position: relative;
@@ -331,9 +338,6 @@ p3{
     justify-content: center;
     align-items: center;
     opacity:60%;
-}
-h2 {
-    font-size: 15px;
 }
 
 h8 {

@@ -21,8 +21,7 @@
                     <li><a href="#" onclick="navigateToPage('Yujin.html')">Han Yujin</a></li>
                 </ul>
             </li>
-            <li><a href="#" onclick="navigateToPage('albums.html')">Albums</a></li>
-            <li><a href="#">Non-Albums</a></li>
+            <li><a href="#" onclick="navigateToPage('albums.html')">Albums/Non-Albums</a></li>
         </ul>
     </nav>
 </head>
@@ -124,80 +123,79 @@
 <br>
 <br>
 <br>
+<style>
+     .container-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Three columns */
+            grid-gap: 20px; /* Gap between grid items */
+        }
 
+        .container-nonalbum {
+            width: calc(50% - 10px); /* Set width for container to occupy half of the column width with gap */
+        }
+
+        .image-container {
+            text-align: center; /* Center align content */
+        }
+
+        .image-container img {
+            width: 100%; /* Make images fill container width */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Set maximum width for images */
+            max-height: 410px; /* Set maximum height for images */
+        }
+
+        h2 {
+            margin-top: 10px; /* Add space below image */
+        }
+    </style>
+</head>
+<body>
 <div class="container-wrapper">
     <div class="container-nonalbum">
         <div class="image-container">
-            <img src="boysp.jpeg" alt="bp" width="450px" height="450px">
+            <img src="boysp.jpeg" alt="bp">
             <h2>Top 18 Photocards</h2>
         </div>
     </div>
 
     <div class="container-nonalbum">
         <div class="image-container">
-            <img src="kcon.jpeg" alt="kcon" width="450px" height="450px">
+            <img src="kcon.jpeg" alt="kcon">
             <h2>Kcon T-Shirt</h2>
         </div>
     </div>
-</div>
+
     <div class="container-nonalbum">
         <div class="image-container">
-            <img src="logo.jpg" alt="bp" width="450px" height="450px">
+            <img src="logo.jpg" alt="bp">
             <h2>Different Merchandise</h2>
         </div>
     </div>
-</div>
+
     <div class="container-nonalbum">
         <div class="image-container">
-            <img src="lightstick.jpeg" alt="kcon" width="450px" height="450px">
+            <img src="lightstick.jpeg" alt="kcon">
             <h2>Lightstick Photocard set</h2>
         </div>
     </div>
+
     <div class="container-nonalbum">
         <div class="image-container">
-            <img src="tradingc.jpeg" alt="bp" width="450px" height="450px">
+            <img src="tradingc.jpeg" alt="bp">
             <h2>Trading Cards</h2>
         </div>
     </div>
+
     <div class="container-nonalbum">
         <div class="image-container">
-            <img src="seasong.jpeg" alt="bp" width="450px" height="450px">
-            <h2>Seasons Gretings</h2>
+            <img src="seasong.jpeg" alt="bp">
+            <h2>Seasons Greetings</h2>
         </div>
     </div>
 </div>
-</div>
+
 </body>
-<script>
-    function navigateToPage(page) {
-        window.location.href = page;
-    }
-</script>
+</body>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
