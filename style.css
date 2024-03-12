@@ -1,3 +1,6 @@
+*{
+    font-family: Tahoma;
+}
 body {
         background-image: url('stars.jpg');
         background-size: cover;
@@ -17,6 +20,7 @@ p {
 
 h1 {
     margin-top: 40px;
+    text-align: center;
 }
 
 
@@ -71,7 +75,8 @@ h1 {
 
 
 
-     /* VIDEO */
+     /* VIDEO  */
+     /* to make this videobackground image i followed this youtube video https://youtu.be/-unASUgYtVI?si=G_VF7ymLXbdFS1h2*/
 .container-video {
     width: 100vw;
     height: auto;
@@ -99,7 +104,7 @@ h1 {
     height:auto;
 }
 
-/* put the image(right) beside the paragraph*/
+/* chat gpt helped me to put the image(right side) beside the paragraph because when i was trying it kept glithching and going ontop of the*/
 .text-content{
     max-width:300px;
     width:auto;
@@ -292,18 +297,22 @@ p-2{
 /* ALBUM PAGE */
 
 .container-nonalbum {
-  display: inline-block;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between containers */
 }
 
 .image-container {
-  text-align: center;
-  margin: 0 auto;
+    text-align: center; /* Centers the content horizontally */
+    width: calc(80% - 20px); /* Sets the width of each container to half of the parent container width minus the gap */
+    margin-bottom: 20px; /* Adds space between containers vertically */
 }
 
 .image-container img {
-  display: block; 
-  margin: 0 auto; 
+    max-width: 100%; /* Ensures images don't exceed their container width */
 }
+
 .image-container-non {
     position: relative;
     width: 100%;
@@ -404,7 +413,7 @@ li {
     font-size: 15px; 
 }
 .caption {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 97.5%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -459,27 +468,31 @@ li {
 
 /* photocard template */
 /*banner*/
- .image-container-ALBUM {
+.image-container-ALBUM {
     position: relative;
     width: 100%;
     height: 400px; 
-    background-image: url('scans/4946_001.jpg');
+    background-image: url('4946_001.jpg');
     background-size: cover;
     background-position: center;
     color: white; 
     text-align: center;
     justify-content: center;
     align-items: center;
-    opacity:60%;
 }
+
 .text-overlay-ALBUM {
     position: relative;
     top: 50%; 
     transform: translateY(-50%); 
     width: 100%;
 }
-.text-overlay-ALBUM h1 {
-     font-size: 36px;
+
+.text-overlay-ALBUM h9 {
+    font-size: 36px;
+}
+h9{
+    font-size: 55555px;
 }
 
 /* pc tracker*/
@@ -499,15 +512,14 @@ li {
 
 .parent-cards{
     margin:auto;
-    width:30vw;
+    width:50vw;
     justify-content: center;
 }
 
 .filterable_cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-top: 25px;
+    justify-content: center;
 }
 
 .card {
@@ -522,7 +534,7 @@ li {
 .card_checkbox {
     display: none; 
 }
-.card_checkbox:checked+.img {
+.card_checkbox:checked.img {
     opacity: 0.7; 
 }
 .card:hover .img {
@@ -544,7 +556,6 @@ li {
 }
 .card_title {
     font-size: 12px;
-    font-weight: 500;
     color: whitesmoke;
     margin-top:0;
     margin-bottom:3px;
@@ -553,7 +564,6 @@ li {
     font-size: 20px;
     color: black;
 }
-
 
 
 
