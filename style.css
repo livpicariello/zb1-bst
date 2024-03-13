@@ -1,5 +1,5 @@
 *{
-    font-family: Tahoma;
+    font-family: Tahoma,Arial,Verdana,Helvetica;
 }
 body {
         background-image: url('stars.jpg');
@@ -7,7 +7,7 @@ body {
         background-repeat: repeat;
         padding: 0;
         height: 100vh;
-        font-family: Tahoma;
+        font-family: Tahoma,Arial,Verdana,Helvetica;
         color: white;
 }
 
@@ -44,7 +44,7 @@ h1 {
             text-decoration: none;
             text-align: center;
             font-size: 20px;
-            font-family: Tahoma;
+            font-family: Tahoma,Arial,Verdana,Helvetica;
         }
         
         ul li ul.dropdown li {
@@ -68,14 +68,14 @@ h1 {
         }
         
         nav {
-            font-family: Tahoma;
+            font-family: Tahoma,Arial,Verdana,Helvetica;
         }
         
 
 
 
-     /* VIDEO  */
-     /* to make this videobackground image i followed this youtube video https://youtu.be/-unASUgYtVI?si=G_VF7ymLXbdFS1h2*/
+/* VIDEO  */
+/* to make this videobackground image i followed this youtube video https://youtu.be/-unASUgYtVI?si=G_VF7ymLXbdFS1h2*/
 .container-video {
     width: 100vw;
     height: auto;
@@ -92,6 +92,7 @@ h1 {
 .content h1{
     font-size: 50px;
     color: #fff;
+
 }
                     
 .background-clip {
@@ -128,25 +129,10 @@ h1 {
     height: auto;
 }
 
-
-/* about the group images, used w3 shools to code this*/
-div.scroll-container-bst2 {
-  background-color: transparent;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-  margin-left: 380px;
-  width: 1165px;
-}
-
-div.scroll-container-bst2 img {
-  padding: 10px;
-  color: whitesmoke;
-}
-
 .container {
     display: flex;
-    align-items: center; /* Vertically align content */
+    align-items: center; 
+    right: 0;
 }
 
 .text-content-bst {
@@ -161,7 +147,7 @@ div.scroll-container-bst2 img {
 
     /* RANKS */
 .box{
-    margin-left: 300px;
+    margin-left: 500px;
 }
 
 .box .list {
@@ -178,7 +164,7 @@ div.scroll-container-bst2 img {
 
 .box .list .imgbx {
     position: relative;
-    width: 150px;
+    width: 250px;
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
@@ -191,13 +177,13 @@ div.scroll-container-bst2 img {
 .box .list:hover {
     box-shadow: -10px 20px 35px rgba(0, 0, 0, 0.15);
     transform: scale(1.4);
-    opacity: 1;
+    opacity: 100%;
 }
 /* image */
 .box .list .imgbx img {
-    position: absolute;
-    width: 76%;
-    height: 90%;
+    position: relative;
+    width: 56%;
+    height: 100%;
     object-fit: cover;
     justify-content: center;
 }
@@ -208,18 +194,17 @@ div.scroll-container-bst2 img {
 }
 
 .box .list .content .rank {
-    font-size: 1.5em; 
-    font-weight: ;
-    margin-top: 150px;
+    font-size: 25px; 
+    font-weight:bold ;
     color: blueviolet;
     text-justify: cen;
 }
 
 .box .list .content h4 {
     font-size: 12px;
-    font-weight: 300;
-    margin-top: 150px;
     color: #333;
+    margin-top: 80px;
+    margin-left: 140px;
 }
 
 .rank-container {
@@ -227,7 +212,6 @@ div.scroll-container-bst2 img {
     flex-wrap: nowrap;
     width: 80%;
     height: auto;
-    right: 0;
 }
 
 
@@ -236,7 +220,7 @@ div.scroll-container-bst2 img {
 .container-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 20px; 
+    grid-gap: 5px; 
 }
 
 .container-nonalbum {
@@ -273,9 +257,9 @@ h2 {
     opacity:60%;
 }
 
-h8 {
+h3{
     font-size: 50px;
-    font-family: Tahoma;
+    font-family: Tahoma,Arial,Verdana,Helvetica;
 }
 
 /* flip cards got the inspiration from actual albums having the track list on the back. https://youtu.be/OE4MsGlzxxc?si=NtaEV4JH2dsh9Zpu
@@ -353,7 +337,7 @@ followed this tutorial but made adjustments as i went along */
 li {
     list-style: none;
     text-align: center;
-    line-space: 8px;
+    line-size: 8px;
     font-size: 15px; 
 }
 .caption {
@@ -366,36 +350,34 @@ li {
     text-align: center;
 }
 .column {
-  flex: 1;
-  margin: 10px;
-  text-align: center;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
 }
 .column img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 .column h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 .column ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 .column li {
-  font-size: 16px;
+    font-size: 16px;
 }
-
-
 
 /* rose and melreose, representing the different album versions */
 
-    .container-drawing {
-    position: relative;
-    display: inline-block;
-    margin-left: 10px; /* Adjust margin as needed */
+.container-drawing {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .image-container-drawing {
@@ -455,6 +437,11 @@ li {
 .text-overlay-ALBUM h9 {
     font-size: 36px;
 }
+
+
+
+
+
 
 /* pc tracker page */
 
@@ -533,10 +520,6 @@ h6{
     text-align: center;
 }
 
-
-
-
-<!-- -->
 
 
 
