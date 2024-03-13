@@ -9,7 +9,6 @@ body {
         height: 100vh;
         font-family: Tahoma;
         color: white;
-        min-height: 100VH;
 }
 
 p {
@@ -125,7 +124,7 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: top;
-    margin-left: 160px;
+    margin-left: 80px;
     gap: 20px;
 }
 
@@ -488,6 +487,16 @@ li {
     white-space: nowrap; /* Keep the text in one line */
 }
 
+.center-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-images img {
+    margin-right: 15px; /* Add a right margin to create the gap */
+}
+
 /* photocard template */
 /* banner */
 .image-container-ALBUM {
@@ -590,5 +599,33 @@ li {
 h6{
     text-align: center;
 }
+
+
+
+
+<!-- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
