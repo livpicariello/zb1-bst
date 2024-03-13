@@ -159,169 +159,104 @@ div.scroll-container-bst2 img {
 }
 
 
-/* RANKS*/
-                /* deb helped me to fix my broken rank when it was over 
-                top of my type and align it beside the paragraph path*/
-H4{
-    font-size: 12px;
-    font-weight: 200px;
-    color: #333;
-}
-p-2{
-    font-size: 10px;
-    color: black;
+    /* RANKS */
+.box{
+    margin-left: 300px;
 }
 
-
-.box {
-    display:flex;
-    flex-wrap:wrap;
-    max-width:4z00px;
-}
-
-.box .list{
+.box .list {
     position: relative;
     padding: 10px;
     border-radius: 10px;
-    margin: 10px 0;
+    margin-left:6px ;
+    margin-bottom: 6px;
     cursor: pointer;
     transition: 0.5s;
     overflow: hidden;
     background: #fff;
 }
 
-.box .list .imgbx{
+.box .list .imgbx {
     position: relative;
-    width: 180px;
-    height: 90px;
+    width: 150px;
+    height: 200px;
     border-radius: 10px;
     overflow: hidden;
-    margin-right: 10px;
-
 }
-
-.box:hover .list{
+    /* on hover effects*/
+.box:hover .list {
     opacity: 0.25;
 }
 
-.box .list:hover{
+.box .list:hover {
     box-shadow: -10px 20px 35px rgba(0, 0, 0, 0.15);
-    transform: scale(1.1);
+    transform: scale(1.4);
     opacity: 1;
 }
-
-.box .list .imgbx img{
+/* image */
+.box .list .imgbx img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
+    width: 76%;
+    height: 90%;
     object-fit: cover;
-
-}
-
-.box .list .content{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    color: black;
-}
-p3{
-    margin-left:380px ;
 }
 
-/* RANKS */
+.box .list .content {
+    position: absolute;
+    text-align: right;
+}
 
 .box .list .content .rank {
-    position: absolute;
-    right: 20px; 
-    top: -20px; 
+    font-size: 1.5em; 
+    font-weight: ;
+    margin-top: 150px;
     color: blueviolet;
-    transition: 0.5s;
-    font-size: 2em;
+    text-justify: cen;
 }
 
 .box .list .content h4 {
-    position: absolute;
-    right: 20px; 
-    top: -40px; 
     font-size: 12px;
-    font-weight: 200px;
+    font-weight: 300;
+    margin-top: 150px;
     color: #333;
-    z-index: 1;
-}
-
-
-.box .list:hover .content .rank{
-    font-weight: 500;
-    opacity: 0.25;
-}
-
-.box .list:hover .content .rank{
-    right: 20px;
-}
-
-.box .list .content .rank{
-    position: absolute;
-    right: -50px;
-    co
 }
 
 .rank-container {
     display: flex;
-    flex-wrap: nowrap; 
-    width: 25%vw;
+    flex-wrap: nowrap;
+    width: 80%;
     height: auto;
+    right: 0;
 }
 
-.list {
-    margin-right: 20px; 
-}
-
-
-        /* deb helped me to fix my broken rank when it was over top of my type and align it beside the paragraph */
-       /*  to make the paragraph and rank beside eachother  */          
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-
-.image-container-ranks{
-    position: relative;
-    background-image: url('ranks.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-}
 
 /* ALBUM PAGE */
 /* Banner adjustments */
 .container-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            grid-gap: 20px; /* Gap between grid items */
-        }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+}
 
-        .container-nonalbum {
-            width: 100%; /* Full width for container */
-        }
+.container-nonalbum {
+    width: 100%; 
+}
 
-        .image-container {
-            text-align: center; /* Center align content */
-        }
+.image-container {
+text-align: center; 
+}
 
-        .image-container img {
-            width: 100%; /* Make images fill container width */
-            height: auto; /* Maintain aspect ratio */
-            max-width: 450px; /* Set maximum width for images */
-            max-height: 450px; /* Set maximum height for images */
-        }
+.image-container img {
+    width: 100%; /* Make images fill container width */
+    height: auto; 
+    max-width: 450px; 
+    max-height: 450px; 
+ }
 
-        h2 {
-            margin-top: 10px; /* Add space below image */
-        }
+h2 {
+    margin-top: 10px;
+}
 
 .image-container-non {
     position: relative;
