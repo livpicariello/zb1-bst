@@ -5,7 +5,6 @@
 body {
         background-image: url('stars.jpg');
         background-size: cover;
-        background-repeat: repeat;
         padding: 0;
         height: 100vh;
         font-family: Tahoma,Arial,Verdana,Helvetica;
