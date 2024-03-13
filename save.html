@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerobaseone Individual Photocard List</title>
+    <link rel="stylesheet" href="style.css"/> 
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .container-drawing {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container-drawing {
+            position: relative;
+            text-align: center;
+        }
+
+.image-container-drawing img {
+    width: 100%; /* Adjust this value to your desired width */
+    height: 100px; /* Adjust this value to your desired height */
+}
+
+
+        .image-container-drawing p {
+            position: absolute;
+            top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
+            left: 45%;
+            transform: translate(-40%, -60%);
+            padding: 10px;
+            word-spacing: 20px;
+            font-size: 20px; /* Adjust the font size as needed */
+            white-space: nowrap; /* Keep the text in one line */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateToPage('Index.html')">About</a></li>
+            <li>
+                <a href="#">Templates ▾</a>
+                <ul class="dropdown">
+                    <li><a href="#" onclick="navigateToPage('Zhanghao.html')">Zhanghao</a></li>
+                    <li><a href="#" onclick="navigateToPage('Hanbin.html')">Sung Hanbin</a></li>
+                    <li><a href="#" onclick="navigateToPage('Matthew.html')">Seok Matthew</a></li>
+                    <li><a href="#" onclick="navigateToPage('Ricky.html')">Ricky</a></li>
+                    <li><a href="#" onclick="navigateToPage('Gunwook.html')">Park Gunwook</a></li>
+                    <li><a href="#" onclick="navigateToPage('Taerae.html')">Kim Taerae</a></li>
+                    <li><a href="#" onclick="navigateToPage('Gyuvin.html')">Kim Gyuvin</a></li>
+                    <li><a href="#" onclick="navigateToPage('Jiwoong.html')">Kim Jiwoong</a></li>
+                    <li><a href="#" onclick="navigateToPage('Yujin.html')">Han Yujin</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="navigateToPage('albums.html')">Albums/Non-Albums</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-drawing">
+        <div class="image-container-drawing">
+            <img src="drawing/rose.jpg" alt="rose">
+            <p>Youth Shade Digipack</p>
+        </div>
+    </div>
+
+    <div class="container-drawing">
+        <div class="image-container-drawing">
+            <img src="drawing/melrose.jpg" alt="melrose">
+            <p>Fairytale Loyalty Mystery Digipack</p>
+        </div>
+    </div>
+</body>
+
+</html>
+

@@ -456,21 +456,35 @@ li {
 
 
 /* rose and melreose */
-.type-label {
-  position: relative;
-  top: -100px; /* Adjust as needed */
-  text-align: center;
-  font-weight: bold;
-}
 
-.container-drawing {
-  display: inline-block;
-  vertical-align: top;
-}
+        .container-drawing {
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+        }
 
-.image-container-drawing {
-  text-align: center;
-}
+        .image-container-drawing {
+            position: relative;
+            text-align: center;
+            margin-left: 300px;
+        }
+
+        .image-container-drawing img {
+            width: 100%; /* Adjust this value to your desired width */
+            height: 100px; /* Adjust this value to your desired height */
+        }
+
+
+        .image-container-drawing p {
+            position: absolute;
+            top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
+            left: 45%;
+            transform: translate(-40%, -60%);
+            padding: 5px;
+            word-spacing: 20px;
+            font-size: 20px; /* Adjust the font size as needed */
+            white-space: nowrap; /* Keep the text in one line */
+        }
 
 
 
@@ -501,9 +515,11 @@ li {
     font-size: 36px;
 }
 
-/* pc tracker*/
+/* pc tracker */
 
-/*.container-pc {
+/* old container replaced with filterable cards
+
+.container-pc {
     display: flex;
     flex-direction: column;
     align-items: center;
