@@ -1,76 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.slidershow{
-    width: 700px;
-    height: 400px;
-    overflow: hidden;
-}
-.middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.navigation{
-    position:absolute;
-    background-image: 20px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-}
-.bar{
-    width: 50px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.bar:hover{
-    background: #fff;
-}
-
-input[name="r"]{
-    position: absolute;
-    visibility: hidden;
-}
-</style>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zerobaseone Individual Photocard List</title>
     <link rel="stylesheet" href="style.css"/> 
-    <div class="slidershow middle">
+</head>
+<body>
+
+<div class="slidershow middle">
     <div class="slides">
         <input type="radio" name="r" id="r1" checked>
         <input type="radio" name="r" id="r2">
         <input type="radio" name="r" id="r3">
         <input type="radio" name="r" id="r4">
-       <img src="boysp.jpg" alt="Boys Planet" width="620px" height="450px">
-   </div>
-
-        <div class="slides"> 
-    <img src="shade.jpg" alt="Youth In The Shade" width="620px" height="450px">
+        <div class="slide s1">
+            <img src="boysp.jpg" alt="Boys Planet" width="620px" height="450px"></div>
+        <div class="slide">
+            <img src="shade.jpg" alt="Youth In The Shade" width="620px" height="450px"></div>
+        <div class="slide">
+            <img src="melp.jpg" alt="melting point" width="620px" height="450px"></div>
+        <div class="slide"><img src="yurayura.jpeg" alt="yura yura" width="620px" height="450px"></div>
     </div>
 
-        <div class="slides"> 
-    <img src="melp.jpg" alt="melting point" width="620px" height="450px">
-    </div>
 
-   <div class="slides"> 
-    <img src="yurayura.jpeg" alt="yura yura" width="620px" height="450px">
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
     </div>
 </div>
-<div class="navigation">
-    <label for="r1" class="bar"></label>
-    <label for="r2" class="bar"></label>
-    <label for="r3" class="bar"></label>
-    <label for="r4" class="bar"></label>
 
-    </div>
-
+</body>
 </html>
-
