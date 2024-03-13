@@ -1,5 +1,6 @@
 *{
     font-family: Tahoma,Arial,Verdana,Helvetica;
+    max-width: 2000px;
 }
 body {
         background-image: url('stars.jpg');
@@ -264,10 +265,9 @@ h3{
 
 /* flip cards got the inspiration from actual albums having the track list on the back. https://youtu.be/OE4MsGlzxxc?si=NtaEV4JH2dsh9Zpu
 followed this tutorial but made adjustments as i went along */
-.container-image {
+.container-image-rose{
     width: 100%;
     height: calc(100vh - 300px);
-
 }
 
 .full-screen-image {
@@ -375,26 +375,29 @@ li {
 /* rose and melreose, representing the different album versions */
 
 .container-drawing {
-    width: 100%;
-    margin: auto;
+    width: 480px;
+    height: 210px;
+    margin: 4px;
     overflow: hidden;
 }
 
 .image-container-drawing {
     position: relative;
     text-align: center;
-    margin-right: 20px; /* Add margin to separate the images */
+    margin: 5px /* Center the container horizontally */
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Allow height to adjust based on content */
 }
 
 .image-container-drawing img {
-    width: 100%; /* Adjust this value to your desired width */
+    width: 95%; /* Adjust this value to your desired width */
     height: 100px; /* Adjust this value to your desired height */
 }
 
 .image-container-drawing p {
     position: absolute;
     top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
-    left: 45%;
+    left: 50%;
     transform: translate(-40%, -60%);
     padding: 5px;
     word-spacing: 20px;
@@ -406,6 +409,9 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.container{
+    justify-content: center;
 }
 
 .center-images img {
@@ -437,7 +443,6 @@ li {
 .text-overlay-ALBUM h9 {
     font-size: 36px;
 }
-
 
 
 
