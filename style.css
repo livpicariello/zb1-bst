@@ -136,12 +136,12 @@ h1 {
 }
 
 .text-content-bst {
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
 }
 
 .image-container-group {
-    width: 50%; /* Adjust as needed */
-    margin-left: 20px; /* Add space between text and image */
+    width: 50%; 
+    margin-left: 20px; 
 }
 
 
@@ -232,7 +232,7 @@ text-align: center;
 }
 
 .image-container img {
-    width: 100%; /* Make images fill container width */
+    width: 100%; 
     height: auto; 
     max-width: 450px; 
     max-height: 450px; 
@@ -372,7 +372,7 @@ li {
 }
 
 /* rose and melreose, representing the different album versions */
-
+/* used chatpt to help me centre images*/ 
 .container-drawing {
     width: 480px;
     height: 210px;
@@ -383,25 +383,25 @@ li {
 .image-container-drawing {
     position: relative;
     text-align: center;
-    margin: 5px /* Center the container horizontally */
-    width: 500px; /* Adjust the width as needed */
-    height: auto; /* Allow height to adjust based on content */
+    margin: 5px 
+    width: 500px; 
+    height: auto; 
 }
 
 .image-container-drawing img {
-    width: 95%; /* Adjust this value to your desired width */
-    height: 100px; /* Adjust this value to your desired height */
+    width: 95%; 
+    height: 100px; 
 }
 
 .image-container-drawing p {
     position: absolute;
-    top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
+    top: calc(50% - 10px); 
     left: 50%;
     transform: translate(-40%, -60%);
     padding: 5px;
     word-spacing: 20px;
-    font-size: 17px; /* Adjust the font size as needed */
-    white-space: nowrap; /* Keep the text in one line */
+    font-size: 17px; 
+    white-space: nowrap; 
 }
 
 .center-images {
@@ -414,7 +414,7 @@ li {
 }
 
 .center-images img {
-    margin-right: 15px; /* Add a right margin to create the gap */
+    margin-right: 15px; 
 }
 
 /* photocard template */
