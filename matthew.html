@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zerobaseone Individual Photocard List</title>
     <link rel="stylesheet" href="style.css"/> 
-<script>
-        function toggleOpacity(element) {
-            var image = element.querySelector('.img');
-            if (image.style.opacity === '0.3') {
-                image.style.opacity = '1';
-            } else {
-                image.style.opacity = '0.3';
-            }
-        }
-    </script>
-    <!-- couldn't get toggle opacity to work so had chatgpt help me figure out how to do it-->
 </head>
 <body>
     <nav>
@@ -362,7 +351,18 @@
     function navigateToPage(page) {
         window.location.href = page;
     }
+   function toggleOpacity(element) {
+            var image = element.querySelector('.img');
+            if (image.style.opacity === '0.3') {
+                image.style.opacity = '1';
+            } else {
+                image.style.opacity = '0.3';
+            }
+        }
 </script>
+    <!-- couldn't get toggle opacity to work so had chatgpt help me figure out how to do it-->
+</body>
+</html>
 </body>
 </html>
 
