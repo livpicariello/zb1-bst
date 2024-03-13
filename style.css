@@ -1,20 +1,31 @@
-*{
-    font-family: Tahoma;
+/* General styles */
+
+.WebContainer{
+    width: 100%;
+    height: auto;
 }
+.articles{
+    width:90%; /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+} 
+
+* {
+    font-family: Tahoma, Verdana, Arial, Helvetica;
+}
+
 body {
-        background-image: url('stars.jpg');
-        background-size: cover;
-        background-repeat: repeat;
-        padding: 0;
-        height: 100vh;
-        font-family: Tahoma;
-        color: white;
+    background-image: url('stars.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 0;
+    height: 100vh;
+    color: white;
 }
 
 p {
-        font-size: 13px;
-        margin-top: 10px;
-        color: white;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
 h1 {
@@ -22,60 +33,45 @@ h1 {
     text-align: center;
 }
 
+/* Dropdown menu */
+nav ul {
+    list-style: none;
+    background: #392169;
+    margin: 0;
+    padding: 0;
+}
 
- /* Style for dropdown */
-         /* DROPDOWN */
-        nav ul {
-            list-style: none;
-            background: #392169;
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav ul li {
-            display: inline-block;
-            position: relative;
-        }
-        
-        nav ul li a {
-            display: block;
-            padding: 20px 25px;
-            color: #FFF;
-            text-decoration: none;
-            text-align: center;
-            font-size: 20px;
-            font-family: Tahoma;
-        }
-        
-        ul li ul.dropdown li {
-            display: block;
-        }
-        
-         ul li ul.dropdown {
-            width: 100%;
-            background: #504466;
-            position: absolute;
-            z-index: 999;
-            display: none;
-        }
-        
-         ul li a:hover {
-            background: #6d30e9;
-        }
-        
-        ul li:hover ul.dropdown {
-            display: block;
-        }
-        
-        nav {
-            font-family: Tahoma;
-        }
-        
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
 
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
 
+ul li ul.dropdown {
+    width: 100%;
+    background: #504466;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
 
-     /* VIDEO  */
-     /* to make this videobackground image i followed this youtube video https://youtu.be/-unASUgYtVI?si=G_VF7ymLXbdFS1h2*/
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+nav {
+    font-family: Tahoma, Verdana, Arial, Helvetica;;
+}
+
+/* Video background */
 .container-video {
     width: 100vw;
     height: auto;
@@ -84,58 +80,23 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-                    
-.content {
-    text-align: center;
-}
-                    
-.content h1{
+
+.content h1 {
     font-size: 50px;
     color: #fff;
 }
-                    
-.background-clip {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width:100vw;
-    height:auto;
-}
 
-/* chat gpt helped me to put the image(right side) beside the paragraph because when i was trying it kept glithching and going ontop of the*/
-.text-content{
-    max-width:300px;
-    width:auto;
-    margin:0;
-}
-.text-content-bst {
-    flex: 1;
-    padding-left: 20px;
-    max-width:500px;
-}
-
-.right-aligned-image {
-    margin-left: 20px; 
-}
-
-/* put the image(left) beside the paragraph*/
+/* Container for text and image */
 .container-bst {
     display: flex;
     justify-content: center;
-    text-align: top;
-    margin-left: 80px;
     gap: 20px;
+    margin-left: 80px;
 }
 
 .text-content-bst {
     flex: 1;
-    padding: 0 10px; /* Adjust padding as needed */
-}
-
-.image-container {
-    flex: 1;
-    text-align: center;
+    padding: 0 10px;
 }
 
 .image-container img {
@@ -143,45 +104,52 @@ h1 {
     height: auto;
 }
 
-
-/* about the group images, used w3 shools to code this*/
-div.scroll-container-bst2 {
-  background-color: transparent;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-  margin-left: 380px;
-  width: 1165px;
+/* slidershow */
+.slidershow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-div.scroll-container-bst2 img {
-  padding: 10px;
-  color: whitesmoke;
+.navigation{
+    position:absolute;
+    background-image: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
-
-
-/* RANKS*/
-                /* deb helped me to fix my broken rank when it was over 
-                top of my type and align it beside the paragraph path*/
-H4{
-    font-size: 12px;
-    font-weight: 200px;
-    color: #333;
-}
-p-2{
-    font-size: 10px;
-    color: black;
+.bar:hover{
+    background: #fff;
 }
 
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
 
+/* Ranks */
 .box {
-    display:flex;
-    flex-wrap:wrap;
-    max-width:4z00px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px; 
 }
 
-.box .list{
+.box .list {
     position: relative;
     padding: 10px;
     border-radius: 10px;
@@ -192,299 +160,90 @@ p-2{
     background: #fff;
 }
 
-.box .list .imgbx{
+.box .list:hover {
+    box-shadow: -10px 20px 35px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.box .list .imgbx {
     position: relative;
     width: 180px;
     height: 90px;
     border-radius: 10px;
     overflow: hidden;
     margin-right: 10px;
-
 }
 
-.box:hover .list{
-    opacity: 0.25;
-}
-
-.box .list:hover{
-    box-shadow: -10px 20px 35px rgba(0, 0, 0, 0.15);
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-.box .list .imgbx img{
+.box .list .imgbx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
     height: 100%;
     object-fit: cover;
-
 }
 
-.box .list .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-}
-p3{
-    margin-left:380px ;
-}
-
-/* RANKS */
-
-.box .list .content .rank {
-    position: absolute;
-    right: 20px; 
-    top: -20px; 
-    color: blueviolet;
-    transition: 0.5s;
-    font-size: 2em;
-}
-
-.box .list .content h4 {
-    position: absolute;
-    right: 20px; 
-    top: -40px; 
-    font-size: 12px;
-    font-weight: 200px;
-    color: #333;
-    z-index: 1;
-}
-
-
-.box .list:hover .content .rank{
-    font-weight: 500;
-    opacity: 0.25;
-}
-
-.box .list:hover .content .rank{
-    right: 20px;
-}
-
-.box .list .content .rank{
-    position: absolute;
-    right: -50px;
-    co
-}
-
-.rank-container {
-    display: flex;
-    flex-wrap: nowrap; 
-    width: 25%vw;
-    height: auto;
-}
-
-.list {
-    margin-right: 20px; 
-}
-
-
-        /* deb helped me to fix my broken rank when it was over top of my type and align it beside the paragraph */
-       /*  to make the paragraph and rank beside eachother  */          
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-
-.image-container-ranks{
-    position: relative;
-    background-image: url('ranks.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-}
-
-/* ALBUM PAGE */
-/* Banner adjustments */
+/* Album page */
 .container-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            grid-gap: 20px; /* Gap between grid items */
-        }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
 
-        .container-nonalbum {
-            width: 100%; /* Full width for container */
-        }
-
-        .image-container {
-            text-align: center; /* Center align content */
-        }
-
-        .image-container img {
-            width: 100%; /* Make images fill container width */
-            height: auto; /* Maintain aspect ratio */
-            max-width: 450px; /* Set maximum width for images */
-            max-height: 450px; /* Set maximum height for images */
-        }
-
-        h2 {
-            margin-top: 10px; /* Add space below image */
-        }
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px;
+}
 
 .image-container-non {
     position: relative;
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background-image: url('scans/4948_001.jpg');
     background-size: cover;
     background-position: center;
-    color: white; 
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:60%;
+    opacity: 0.6; /* Corrected typo */
 }
 
-h8 {
-    font-size: 50px;
-    font-family: Tahoma;
-}
-
-/* flip cards got the inspiration from actual albums having the track list on the back. https://youtu.be/OE4MsGlzxxc?si=NtaEV4JH2dsh9Zpu
-followed this tutorial but made adjustments as i went along */
-.container-image {
-    width: 100%;
-    height: calc(100vh - 300px);
-
-}
-
-.full-screen-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.55;
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-}
-
-.container-albums {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-}
-
-.flip-card {
-     margin: 10px;
-}
-
+/* Flip cards */
 .flip-card-inner {
-      position: relative;
-      width: 450px;
-      height: 450px;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-.flip-card-back {
-    background-color: #7cabf7;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.back-content {
-    padding: 20px;
-    text-align: center;
-}
-li {
-    list-style: none;
-    text-align: center;
-    line-space: 8px;
-    font-size: 15px; 
-}
-.caption {
     position: relative;
-    bottom: 0;
-    width: 97.5%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 0px;
+    width: 450px;
+    height: 450px;
     text-align: center;
-}
-.column {
-  flex: 1;
-  margin: 10px;
-  text-align: center;
-}
-.column img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-.column h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-.column ul {
-  list-style-type: none;
-  padding: 0;
-}
-.column li {
-  font-size: 16px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-
-
-/* rose and melreose, representing the different album versions */
-
-    .container-drawing {
+/* Drawing container */
+.container-drawing {
     position: relative;
     display: inline-block;
-    margin-left: 10px; /* Adjust margin as needed */
-}
-
-.image-container-drawing {
-    position: relative;
-    text-align: center;
-    margin-right: 20px; /* Add margin to separate the images */
+    margin-left: 10px;
 }
 
 .image-container-drawing img {
-    width: 100%; /* Adjust this value to your desired width */
-    height: 100px; /* Adjust this value to your desired height */
+    width: 100%;
+    height: 100px;
 }
 
 .image-container-drawing p {
     position: absolute;
-    top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
+    top: calc(50% - 10px);
     left: 45%;
     transform: translate(-40%, -60%);
     padding: 5px;
     word-spacing: 20px;
-    font-size: 17px; /* Adjust the font size as needed */
-    white-space: nowrap; /* Keep the text in one line */
+    font-size: 17px;
+    white-space: nowrap;
 }
 
 .center-images {
@@ -494,19 +253,18 @@ li {
 }
 
 .center-images img {
-    margin-right: 15px; /* Add a right margin to create the gap */
+    margin-right: 15px;
 }
 
-/* photocard template */
-/* banner */
+/* Photocard template */
 .image-container-ALBUM {
     position: relative;
     width: 100%;
-    height: 400px; 
+    height: 400px;
     background-image: url('pic/4946_001.jpg');
     background-size: cover;
     background-position: center;
-    color: white; 
+    color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -514,8 +272,8 @@ li {
 
 .text-overlay-ALBUM {
     position: relative;
-    top: 50%; 
-    transform: translateY(-50%); 
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
 }
 
@@ -523,27 +281,10 @@ li {
     font-size: 36px;
 }
 
-/* pc tracker page */
-
-/* old container replaced with filterable cards
-
-.container-pc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    max-width: 1200px;
-    width: 100%;
-    padding: 5px;
-    margin: 20px auto;
-    background:yellow;
-    }*/
-
-/* was struggling to get my images in the right place deb helped my by creating parent card to make each section own unit */
-.parent-cards{
-    margin:auto;
-    width:50vw;
+/* Filterable cards */
+.parent-cards {
+    margin: auto;
+    width: 50vw;
     justify-content: center;
 }
 
@@ -560,50 +301,45 @@ li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     margin-right: 10px;
     margin-bottom: 10px;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
+
 .card_checkbox {
-    display: none; 
+    display: none;
 }
-.card_checkbox:checked.img {
-    opacity: 0.7; 
-}
+
 .card:hover .img {
-    opacity: 0.7; 
+    opacity: 0.7;
 }
-.card:active .img {
-    opacity: 0.7; 
-}
+
 .card .img {
     width: 100%;
     height: 200px;
     border-radius: 9px 9px 0 0;
-    opacity: 1; 
-    transition: opacity 0.3s ease; 
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
+
 .card_body {
     padding: 15px 20px 20px;
     padding-bottom: 10px;
 }
+
 .card_title {
     font-size: 12px;
     color: whitesmoke;
-    margin-top:0;
-    margin-bottom:3px;
+    margin-top: 0;
+    margin-bottom: 3px;
 }
+
 .card_text {
     font-size: 20px;
     color: black;
 }
 
-h6{
+h6 {
     text-align: center;
 }
-
-
-
-
-<!-- -->
 
 
 
