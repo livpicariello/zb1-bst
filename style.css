@@ -300,7 +300,8 @@ p3{
 }
 
 /* ALBUM PAGE */
-container-wrapper {
+/* Banner adjustments */
+.container-wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* Two columns */
             grid-gap: 20px; /* Gap between grid items */
@@ -345,6 +346,8 @@ h8 {
     font-family: Tahoma;
 }
 
+/* flip cards got the inspiration from actual albums having the track list on the back. https://youtu.be/OE4MsGlzxxc?si=NtaEV4JH2dsh9Zpu
+followed this tutorial but made adjustments as i went along */
 .container-image {
     width: 100%;
     height: calc(100vh - 300px);
@@ -455,42 +458,38 @@ li {
 
 
 
-/* rose and melreose */
+/* rose and melreose, representing the different album versions */
 
-        .container-drawing {
-            position: relative;
-            display: inline-block;
-            margin-left: 20px;
-        }
+    .container-drawing {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px; /* Adjust margin as needed */
+}
 
-        .image-container-drawing {
-            position: relative;
-            text-align: center;
-            margin-left: 300px;
-        }
+.image-container-drawing {
+    position: relative;
+    text-align: center;
+    margin-right: 20px; /* Add margin to separate the images */
+}
 
-        .image-container-drawing img {
-            width: 100%; /* Adjust this value to your desired width */
-            height: 100px; /* Adjust this value to your desired height */
-        }
+.image-container-drawing img {
+    width: 100%; /* Adjust this value to your desired width */
+    height: 100px; /* Adjust this value to your desired height */
+}
 
-
-        .image-container-drawing p {
-            position: absolute;
-            top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
-            left: 45%;
-            transform: translate(-40%, -60%);
-            padding: 5px;
-            word-spacing: 20px;
-            font-size: 20px; /* Adjust the font size as needed */
-            white-space: nowrap; /* Keep the text in one line */
-        }
-
-
-
+.image-container-drawing p {
+    position: absolute;
+    top: calc(50% - 10px); /* Adjusted to raise the text by 5px */
+    left: 45%;
+    transform: translate(-40%, -60%);
+    padding: 5px;
+    word-spacing: 20px;
+    font-size: 17px; /* Adjust the font size as needed */
+    white-space: nowrap; /* Keep the text in one line */
+}
 
 /* photocard template */
-/*banner*/
+/* banner */
 .image-container-ALBUM {
     position: relative;
     width: 100%;
@@ -515,7 +514,7 @@ li {
     font-size: 36px;
 }
 
-/* pc tracker */
+/* pc tracker page */
 
 /* old container replaced with filterable cards
 
@@ -532,6 +531,7 @@ li {
     background:yellow;
     }*/
 
+/* was struggling to get my images in the right place deb helped my by creating parent card to make each section own unit */
 .parent-cards{
     margin:auto;
     width:50vw;
